@@ -15,10 +15,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main(String[] args) {
@@ -34,7 +30,7 @@ public class App
 
         Jbdc jbdc = new Jbdc();
 
-        Human owner = new Human("German", 30, 84, new PeeSpartanImp(), new DrinkVikingImp());
+        Human owner = new Human("German", 30, 74, new PeeSpartanImp(), new DrinkVikingImp()); //ya si pesas menos que 70 no se
         String winner = "";
 
         //IMPAR
@@ -71,7 +67,7 @@ public class App
         }
 
 
-        //SE VERIFICA QUIEN TOMO MAS, SI SE EMPATA TSE TERMINA ACA
+        //SE VERIFICA QUIEN TOMO MAS, SI SE EMPATA SE TERMINA ACA
         if (viking.get().getDrinks() > spartan.get().getDrinks()){
             System.out.println("\nVIKINGS WIN!!!! 🍺🍺🍺🍺");
             System.out.println(String.format("VIKINGS: %s", viking.get().getDrinks()));
