@@ -55,15 +55,15 @@ en todos los classpaths de un proyecto. Además, esas dependencias se propagan a
 Esto es muy parecido a la compilación, pero indica que espera que el JDK o un contenedor proporcione la dependencia en tiempo de 
 ejecución
 
-##### runtime
+##### runtime:
 indica que la dependencia no es necesaria para la compilación, pero es para la ejecución. Se encuentra en el entorno de ejecución 
 y en la prueba de las rutas de clase, pero no en la compilación de la ruta de clases.
 
-##### test
+##### test:
 indica que la dependencia no es necesaria para el uso normal de la aplicación y solo está disponible para las fases de
 compilación y ejecución de la prueba. Este alcance no es transitivo.
 
-##### system
+##### system:
 Este scope es similar al provided, excepto que debe proporcionar el JAR que lo contiene explícitamente. El artefacto 
 siempre está disponible y no se busca en un repositorio.
 
