@@ -1,0 +1,16 @@
+drop database tp1;
+create database if not exists tp1;
+
+use tp1;
+
+Set global time_zone = '-3:00' ;
+
+#drop table winners
+
+create table if not exists winners(
+idWinner int not null auto_increment,
+nameWinner varchar(50),
+totalDrinks int not null,
+constraint `PK-IdWinners` primary key(idWinner));
+
+select * from winners;
